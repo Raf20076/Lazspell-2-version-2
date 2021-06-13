@@ -12,6 +12,8 @@ Download TRichMemo from https://sourceforge.net/p/lazarus-ccr/svn/HEAD/tree/
 Click Download Snapshot and uncompress lazarus-ccr-svn-r....zip
 Go to folder lazarus-ccr-svn-r... -> components -> richmemo 
 
+img src="https://raw.githubusercontent.com/Raf20076/Lazspell/Lazspell-2-version-2/lazspell.gif"/>
+
 All dictionaries are coded in UTF-8 in dict folder from https://github.com/wooorm/dictionaries
 You must distribute dict folder with your program.
 
