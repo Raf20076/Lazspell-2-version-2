@@ -3,7 +3,7 @@ Lazspel-2 version 2 by Raf20076, Poland, 2021
 Lazspell-2 version 2 is an example of a speller which checks 
 spelling in German, English, Spanish,
 French, Italian, Portugues, 
-Polish and Russian and underlines in red colour errors.
+Polish and Russian and It underlines errors in red colour.
 
 In this example TRichMemo component was used. 
 
