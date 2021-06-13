@@ -1,0 +1,26 @@
+Lazspel-2 version 2 by Raf20076, Poland, 2021
+
+Lazspell-2 version 2 is an example of a speller which checks 
+spelling in German, English, Spanish,
+French, Italian, Portugues, 
+Polish and Russian and underlines in red colour errors.
+
+In this example TRichMemo component was used. 
+
+Install TRichmemo from richmemo folder or TRichMemo from https://sourceforge.net/p/lazarus-ccr/svn/HEAD/tree/ 
+Click Download Snapshot and uncompress lazarus-ccr-svn-r....zip
+Go to folder lazarus-ccr-svn-r... -> components -> richmemo 
+ 
+All dictionaries are coded in UTF-8 from https://github.com/wooorm/dictionaries
+
+Lazspell uses hunspell.pas and hunspell.inc from https://github.com/davidbannon/hunspell4pas
+
+Lazspell is under license: 
+
+Unit Main License is https://creativecommons.org/publicdomain/zero/1.0/deed.en 
+Unit Functions License is https://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+libhunspell.dll was compiled with Microsoft Visual C++ 2010. from the original source from 
+http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz/download
+
+You must distribute this file with your program.  

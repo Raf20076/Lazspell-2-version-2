@@ -1,0 +1,130 @@
+object MainForm: TMainForm
+  Left = 417
+  Height = 498
+  Top = 162
+  Width = 630
+  Caption = 'Lazspell'
+  ClientHeight = 478
+  ClientWidth = 630
+  Menu = MainMenu
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.0.12.0'
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 455
+    Width = 630
+    Panels = <>
+  end
+  object ComboBoxDictionary: TComboBox
+    AnchorSideBottom.Control = ListBoxErrors
+    Left = 571
+    Height = 23
+    Hint = 'Click to choose your dictionary'
+    Top = 2
+    Width = 53
+    Anchors = [akTop, akRight, akBottom]
+    ItemHeight = 15
+    Items.Strings = (
+      ''
+    )
+    OnChange = ComboBoxDictionaryChange
+    ParentShowHint = False
+    ShowHint = True
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object ListBoxErrors: TListBox
+    Left = 504
+    Height = 240
+    Hint = 'Click an error in the Errors Box then '#13#10'click a suggested word in the Suggestions Box'#13#10'to change the error for suggested word.'
+    Top = 40
+    Width = 120
+    Anchors = [akTop, akRight, akBottom]
+    ItemHeight = 0
+    OnClick = ListBoxErrorsClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object LabelErrors: TLabel
+    AnchorSideBottom.Control = ListBoxErrors
+    Left = 504
+    Height = 15
+    Top = 25
+    Width = 30
+    Anchors = [akRight, akBottom]
+    Caption = 'Errors'
+    ParentColor = False
+  end
+  object LabelSuggestions: TLabel
+    AnchorSideTop.Control = ListBoxErrors
+    AnchorSideBottom.Control = ListBoxSuggestions
+    Left = 506
+    Height = 15
+    Top = 289
+    Width = 64
+    Anchors = [akRight, akBottom]
+    Caption = 'Suggestions'
+    ParentColor = False
+  end
+  object ListBoxSuggestions: TListBox
+    AnchorSideTop.Control = LabelSuggestions
+    Left = 504
+    Height = 149
+    Top = 304
+    Width = 120
+    Anchors = [akRight, akBottom]
+    ItemHeight = 0
+    OnClick = ListBoxSuggestionsClick
+    TabOrder = 3
+  end
+  object CheckButton: TButton
+    AnchorSideBottom.Control = LabelErrors
+    Left = 506
+    Height = 23
+    Top = 2
+    Width = 53
+    Anchors = [akTop, akRight, akBottom]
+    Caption = 'Check'
+    OnClick = CheckButtonClick
+    TabOrder = 4
+  end
+  object Memo: TRichMemo
+    Left = 0
+    Height = 454
+    Top = 0
+    Width = 499
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    HideSelection = True
+    TabOrder = 5
+    ZoomFactor = 1
+  end
+  object MainMenu: TMainMenu
+    Left = 8
+    Top = 8
+    object mFile: TMenuItem
+      Caption = 'File'
+      object mNew: TMenuItem
+        Caption = 'New'
+      end
+      object mOpen: TMenuItem
+        Caption = 'Open'
+      end
+      object mExit: TMenuItem
+        Caption = 'Exit'
+      end
+    end
+    object mTools: TMenuItem
+      Caption = 'Tools'
+    end
+    object mHelp: TMenuItem
+      Caption = 'Help'
+      object mAbout: TMenuItem
+        Caption = 'About'
+        OnClick = mAboutClick
+      end
+    end
+  end
+end
