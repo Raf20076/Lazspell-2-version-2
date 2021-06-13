@@ -2,7 +2,7 @@
 
 Lazspell-2 version 2 by Raf20076, Poland, 2021
 
-Lazspell-2 version 2 is an example of a checkspeller which checks spelling in German, English, Spanish,
+Lazspell-2 version 2 is an example of a spellchecker which checks spelling in German, English, Spanish,
 French, Italian, Portugues, Polish and Russian and it underlines errors in red colour.
 
 In this example <b>TRichMemo </b> component was used.
