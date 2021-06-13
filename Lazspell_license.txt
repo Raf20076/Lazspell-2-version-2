@@ -10,7 +10,16 @@ In this example TRichMemo component was used.
 Install TRichmemo from richmemo folder or TRichMemo from https://sourceforge.net/p/lazarus-ccr/svn/HEAD/tree/ 
 Click Download Snapshot and uncompress lazarus-ccr-svn-r....zip
 Go to folder lazarus-ccr-svn-r... -> components -> richmemo 
- 
+----------------------------------------------------------
+To install richmemo component go to; 
+Lazarus IDE menu->Package->Open Package File(.lpk)
+Go to richmemo folder and open richmemopackage.lpk
+In open window click Compile button. After Successful compilation go to
+Lazarus IDE menu->Package->Open Package File(.lpk)
+Go to richmemo folder and opend ide folder then open richmemo_design.lpk
+In open window click Compile button. After Successful compilation click Use button and click Install option.
+Lazarus ide will rebuild itself.
+----------------------------------------------------------- 
 All dictionaries are coded in UTF-8 from https://github.com/wooorm/dictionaries
 
 Lazspell uses hunspell.pas and hunspell.inc from https://github.com/davidbannon/hunspell4pas
